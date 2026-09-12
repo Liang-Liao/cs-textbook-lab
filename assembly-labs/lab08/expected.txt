@@ -1,0 +1,5 @@
+42 is even
+popcount(0b10110100) = 4
+After bts 5, btr 5, btc 3: rax = 8
+7 * 10 (via shifts) = 70
+XOR swap: a=20, b=10

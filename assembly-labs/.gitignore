@@ -1,0 +1,15 @@
+# 构建产物
+*.o
+*.obj
+*.exe
+*.bin
+*.elf
+
+# make test 的临时输出
+.test.out
+
+# lab11 运行时写出的文件
+lab11/output.txt
+
+# ZCode 工作区状态
+.zcode/

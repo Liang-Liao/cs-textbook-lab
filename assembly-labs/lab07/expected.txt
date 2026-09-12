@@ -1,0 +1,3 @@
+strlen("Hello, Assembly World!") = 22
+rep movsb copy: "Hello, Assembly World!"
+strcmp result (equal) = 0

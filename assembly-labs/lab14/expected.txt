@@ -1,0 +1,2 @@
+Minimal program!
+Run 'make analyze' to dissect the PE binary.

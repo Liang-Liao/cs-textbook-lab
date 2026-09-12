@@ -1,0 +1,7 @@
+sc_ret42 size: 6 bytes
+Executing shellcode...
+Shellcode returned: 42
+
+sc_add size: 5 bytes
+func(40, 2) = 42
+func(100, 200) = 300

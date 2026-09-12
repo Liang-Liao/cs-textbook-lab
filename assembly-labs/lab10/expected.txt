@@ -1,0 +1,9 @@
+C strlen:    16
+asm_strlen:  16
+
+asm_max(10, 20) = 20
+asm_max(50, 30) = 50
+
+asm_dot_product: 70
+
+Inline asm: 100 + 200 = 300

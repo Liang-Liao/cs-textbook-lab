@@ -1,0 +1,44 @@
+LL(1) 分析表 M[A][a]（格内是产生式编号 P#）:
+                 EOFKW_PRINT INT_LITFLOAT_LIT    PLUS   MINUS    STAR   SLASH PERCENT      EQ     NEQ      LT      LE      GT      GE  LPAREN  RPAREN    SEMI
+stmt_list         P1      P0      P0      P0       .      P0       .       .       .       .       .       .       .       .       .      P0       .       .
+stmt               .      P2      P3      P3       .      P3       .       .       .       .       .       .       .       .       .      P3       .       .
+expr               .       .      P4      P4       .      P4       .       .       .       .       .       .       .       .       .      P4       .       .
+equality           .       .      P5      P5       .      P5       .       .       .       .       .       .       .       .       .      P5       .       .
+equality'          .       .       .       .       .       .       .       .       .      P6      P7       .       .       .       .       .      P8      P8
+rel                .       .      P9      P9       .      P9       .       .       .       .       .       .       .       .       .      P9       .       .
+rel'               .       .       .       .       .       .       .       .       .      P14      P14      P10      P11      P12      P13       .      P14      P14
+add                .       .      P15      P15       .      P15       .       .       .       .       .       .       .       .       .      P15       .       .
+add'               .       .       .       .      P16      P17       .       .       .      P18      P18      P18      P18      P18      P18       .      P18      P18
+term               .       .      P19      P19       .      P19       .       .       .       .       .       .       .       .       .      P19       .       .
+term'              .       .       .       .      P23      P23      P20      P21      P22      P23      P23      P23      P23      P23      P23       .      P23      P23
+factor             .       .      P26      P27       .      P25       .       .       .       .       .       .       .       .       .      P24       .       .
+
+产生式表:
+  P0  stmt_list -> stmt stmt_list
+  P1  stmt_list -> ε
+  P2  stmt -> KW_PRINT expr SEMI
+  P3  stmt -> expr SEMI
+  P4  expr -> equality
+  P5  equality -> rel equality'
+  P6  equality' -> EQ rel equality'
+  P7  equality' -> NEQ rel equality'
+  P8  equality' -> ε
+  P9  rel -> add rel'
+  P10 rel' -> LT add rel'
+  P11 rel' -> LE add rel'
+  P12 rel' -> GT add rel'
+  P13 rel' -> GE add rel'
+  P14 rel' -> ε
+  P15 add -> term add'
+  P16 add' -> PLUS term add'
+  P17 add' -> MINUS term add'
+  P18 add' -> ε
+  P19 term -> factor term'
+  P20 term' -> STAR factor term'
+  P21 term' -> SLASH factor term'
+  P22 term' -> PERCENT factor term'
+  P23 term' -> ε
+  P24 factor -> LPAREN expr RPAREN
+  P25 factor -> MINUS factor
+  P26 factor -> INT_LIT
+  P27 factor -> FLOAT_LIT

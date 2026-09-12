@@ -1,0 +1,38 @@
+main():
+  sum = 0
+  i = 0
+L1:
+  if i < 8 goto L2
+  goto L3
+L2:
+  t1 = sum + i
+  sum = t1
+  t2 = i + 1
+  i = t2
+  t6 = sum + i
+  sum = t6
+  t7 = i + 1
+  i = t7
+  goto L1
+L3:
+  print sum
+  sq = 0
+  j = 0
+L4:
+  if j < 6 goto L5
+  goto L6
+L5:
+  t3 = j * j
+  t4 = sq + t3
+  sq = t4
+  t5 = j + 1
+  j = t5
+  t8 = j * j
+  t9 = sq + t8
+  sq = t9
+  t10 = j + 1
+  j = t10
+  goto L4
+L6:
+  print sq
+  return

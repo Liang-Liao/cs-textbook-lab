@@ -1,0 +1,54 @@
+main():
+  param 7
+  t12 = call f, 1
+  print t12
+  param 7
+  t13 = call f, 1
+  print t13
+  v = 9
+  param 11
+  t14 = call g, 1
+  print t14
+  param v
+  t15 = call g, 1
+  print t15
+  param 10
+  t16 = call big, 1
+  print t16
+  return
+
+f(k):
+  t1 = k * 3
+  t2 = t1 + 1
+  return t2
+
+g(k@1):
+  t3 = k@1 - 2
+  return t3
+
+big(k@2):
+  acc = 0
+  t4 = k@2 * 2
+  w = t4
+  j = 0
+L1:
+  if j < 4 goto L2
+  goto L5
+L2:
+  t5 = acc + w
+  t6 = j * k@2
+  t7 = t5 + t6
+  acc = t7
+  if acc > 500 goto L3
+  goto L4
+L3:
+  t8 = acc - k@2
+  acc = t8
+L4:
+  t9 = j + 1
+  j = t9
+  goto L1
+L5:
+  t10 = k@2 * k@2
+  t11 = acc + t10
+  return t11

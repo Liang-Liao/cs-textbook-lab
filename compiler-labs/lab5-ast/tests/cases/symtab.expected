@@ -1,0 +1,7 @@
+scope #0 (depth 0)
+  a : int (line 2)
+  b : float (line 3)
+scope #1 (depth 1)
+  c : int (line 5)
+scope #2 (depth 2)
+  a : float (line 7)

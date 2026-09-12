@@ -1,0 +1,37 @@
+main():
+  base = 10
+  param 3
+  param 4
+  t5 = call addk, 2
+  print t5
+  param base
+  param 6
+  t6 = call twice, 1
+  param t6
+  t7 = call addk, 2
+  print t7
+  param 1
+  param 1
+  t8 = call addk, 2
+  param t8
+  call shout, 1
+  param 5
+  t9 = call twice, 1
+  param t9
+  t10 = call twice, 1
+  print t10
+  return
+
+addk(a, b):
+  t1 = a + b
+  t2 = t1 + base
+  return t2
+
+shout(n):
+  t3 = n + 100
+  print t3
+  return
+
+twice(x):
+  t4 = x * 2
+  return t4

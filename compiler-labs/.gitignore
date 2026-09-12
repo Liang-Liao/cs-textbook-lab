@@ -1,0 +1,16 @@
+# 构建产物
+*.exe
+*.o
+*.obj
+build/
+bin/
+
+# graphviz 生成的图（lab2 可选）
+*.pdf
+*.png
+*.svg
+
+# 编辑器
+.vscode/
+.idea/
+.zcode/

@@ -1,0 +1,49 @@
+main():
+  g = 10
+  t5 = 3 * 4
+  t6 = 2 + t5
+  print t6
+  x = 10
+  t7 = x * 2
+  t8 = t7 + x
+  print t8
+  t9 = x < 20
+  print t9
+  param 3
+  param 4
+  t10 = call cse, 2
+  print t10
+  t11 = 1 + 1
+  param 1
+  param 2
+  t12 = call add, 2
+  t13 = g + t12
+  print t13
+  print g
+  i = 0
+L1:
+  if i < 3 goto L2
+  goto L5
+L2:
+  t14 = i + 1
+  i = t14
+  if i == 2 goto L3
+  goto L4
+L3:
+  goto L5
+L4:
+  goto L1
+L5:
+  print i
+  return
+
+add(a, b):
+  t1 = a + b
+  return t1
+
+cse(a@1, b@1):
+  t2 = a@1 * b@1
+  s = t2
+  t3 = a@1 * b@1
+  t4 = s + t3
+  return t4

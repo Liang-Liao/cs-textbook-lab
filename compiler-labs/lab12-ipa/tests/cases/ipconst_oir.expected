@@ -1,0 +1,63 @@
+main():
+  print 22
+  print 22
+  v = 9
+  print 9
+  print 7
+  acc = 0
+  w = 20
+  j = 0
+L15:
+  if j < 4 goto L16
+  goto L19
+L16:
+  t29 = acc + w
+  t30 = j * 10
+  t31 = t29 + t30
+  acc = t31
+  if acc > 500 goto L17
+  goto L18
+L17:
+  t32 = acc - 10
+  acc = t32
+L18:
+  t33 = j + 1
+  j = t33
+  goto L15
+L19:
+  t35 = acc + 100
+  t16 = t35
+  print t16
+  return
+
+f(k):
+  return 22
+
+g(k@1):
+  t3 = k@1 - 2
+  return t3
+
+big(k@2):
+  acc = 0
+  w = 20
+  j = 0
+L1:
+  if j < 4 goto L2
+  goto L5
+L2:
+  t5 = acc + w
+  t6 = j * 10
+  t7 = t5 + t6
+  acc = t7
+  if acc > 500 goto L3
+  goto L4
+L3:
+  t8 = acc - 10
+  acc = t8
+L4:
+  t9 = j + 1
+  j = t9
+  goto L1
+L5:
+  t11 = acc + 100
+  return t11

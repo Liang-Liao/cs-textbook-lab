@@ -1,0 +1,33 @@
+main():
+  i = 0
+L1:
+  if i < 4 goto L2
+  goto L6
+L2:
+  j = 0
+L3:
+  if j < 4 goto L4
+  goto L5
+L4:
+  t1 = i * 4
+  t2 = t1 + j
+  t3 = i * 10
+  t4 = t3 + j
+  m[t2] = t4
+  t5 = j + 1
+  j = t5
+  goto L3
+L5:
+  t6 = i + 1
+  i = t6
+  goto L1
+L6:
+  t7 = 3 * 4
+  t8 = t7 + 2
+  t9 = m[t8]
+  print t9
+  t10 = 0 * 4
+  t11 = t10 + 1
+  t12 = m[t11]
+  print t12
+  return

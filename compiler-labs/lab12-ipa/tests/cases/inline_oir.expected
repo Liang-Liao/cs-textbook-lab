@@ -1,0 +1,21 @@
+main():
+  base = 10
+  print 17
+  print 32
+  print 112
+  print 20
+  return
+
+addk(a, b):
+  t1 = a + b
+  t2 = t1 + base
+  return t2
+
+shout(n):
+  t3 = n + 100
+  print t3
+  return
+
+twice(x):
+  t4 = x * 2
+  return t4

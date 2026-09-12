@@ -1,0 +1,13 @@
+非终结符 可空 FIRST                                        FOLLOW
+stmt_list    yes    {T_KW_PRINT, T_INT_LIT, T_FLOAT_LIT, T_MINUS, T_LPAREN}  {T_EOF}
+stmt         no     {T_KW_PRINT, T_INT_LIT, T_FLOAT_LIT, T_MINUS, T_LPAREN}  {T_EOF, T_KW_PRINT, T_INT_LIT, T_FLOAT_LIT, T_MINUS, T_LPAREN}
+expr         no     {T_INT_LIT, T_FLOAT_LIT, T_MINUS, T_LPAREN}  {T_RPAREN, T_SEMI}
+equality     no     {T_INT_LIT, T_FLOAT_LIT, T_MINUS, T_LPAREN}  {T_RPAREN, T_SEMI}
+equality'    yes    {T_EQ, T_NEQ}  {T_RPAREN, T_SEMI}
+rel          no     {T_INT_LIT, T_FLOAT_LIT, T_MINUS, T_LPAREN}  {T_EQ, T_NEQ, T_RPAREN, T_SEMI}
+rel'         yes    {T_LT, T_LE, T_GT, T_GE}  {T_EQ, T_NEQ, T_RPAREN, T_SEMI}
+add          no     {T_INT_LIT, T_FLOAT_LIT, T_MINUS, T_LPAREN}  {T_EQ, T_NEQ, T_LT, T_LE, T_GT, T_GE, T_RPAREN, T_SEMI}
+add'         yes    {T_PLUS, T_MINUS}  {T_EQ, T_NEQ, T_LT, T_LE, T_GT, T_GE, T_RPAREN, T_SEMI}
+term         no     {T_INT_LIT, T_FLOAT_LIT, T_MINUS, T_LPAREN}  {T_PLUS, T_MINUS, T_EQ, T_NEQ, T_LT, T_LE, T_GT, T_GE, T_RPAREN, T_SEMI}
+term'        yes    {T_STAR, T_SLASH, T_PERCENT}  {T_PLUS, T_MINUS, T_EQ, T_NEQ, T_LT, T_LE, T_GT, T_GE, T_RPAREN, T_SEMI}
+factor       no     {T_INT_LIT, T_FLOAT_LIT, T_MINUS, T_LPAREN}  {T_PLUS, T_MINUS, T_STAR, T_SLASH, T_PERCENT, T_EQ, T_NEQ, T_LT, T_LE, T_GT, T_GE, T_RPAREN, T_SEMI}

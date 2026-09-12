@@ -1,0 +1,52 @@
+# MiniC v1 词法规则（mini-flex 版，与 lab1 手写词法器对拍）
+# 格式: 记号名  正则       （# 开头是注释；SKIP = 匹配后丢弃）
+# 规则顺序 = 等长匹配时的优先级（flex 语义）：关键字必须写在标识符前。
+
+# --- 关键字（与 lab1 KEYWORDS 表一致） ---
+T_KW_INT       int
+T_KW_FLOAT     float
+T_KW_VOID      void
+T_KW_IF        if
+T_KW_ELSE      else
+T_KW_WHILE     while
+T_KW_RETURN    return
+T_KW_BREAK     break
+T_KW_CONTINUE  continue
+T_KW_PRINT     print
+
+# --- 字面量（浮点写在前：3.14 时浮点规则匹配更长，最长匹配优先） ---
+T_FLOAT_LIT    [0-9]+\.[0-9]*
+T_INT_LIT      [0-9]+
+
+# --- 标识符（放在关键字后：if 与 T_IDENT 等长时让关键字赢） ---
+T_IDENT        [A-Za-z_][A-Za-z0-9_]*
+
+# --- 运算符（双字符的写在前；特殊字符用 \ 转义） ---
+T_GE           >=
+T_LE           <=
+T_EQ           ==
+T_NEQ          !=
+T_ANDAND       &&
+T_OROR         \|\|
+T_ASSIGN       =
+T_LT           <
+T_GT           >
+T_NOT          !
+T_PLUS         \+
+T_MINUS        -
+T_STAR         \*
+T_PERCENT      %
+T_SLASH        /
+T_LPAREN       \(
+T_RPAREN       \)
+T_LBRACE       \{
+T_RBRACE       \}
+T_LBRACKET     \[
+T_RBRACKET     \]
+T_SEMI         ;
+T_COMMA        ,
+
+# --- 空白与注释（SKIP 掉） ---
+SKIP           [ \t\r\n]+
+SKIP           //[^\n]*
+SKIP           /\*([^*]|\*[^/])*\**\*/

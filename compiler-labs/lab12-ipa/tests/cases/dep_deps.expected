@@ -1,0 +1,25 @@
+[deps] == func main ==
+[deps] loop head=B1 latch=B3 stmts=2
+[S1->S1 a dist=- none]
+[S2->S1 a dist=1 true]
+[S2->S2 a dist=- none]
+[deps] loop head=B5 latch=B7 stmts=2
+[S1->S1 b dist=- none]
+[S1->S2 b dist=1 anti]
+[S2->S2 b dist=- none]
+[deps] loop head=B9 latch=B11 stmts=2
+[S1->S1 c dist=- none]
+[S1->S2 c dist=0 anti]
+[S2->S2 c dist=- none]
+[deps] loop head=B16 latch=B18 stmts=2
+[S1->S1 m dist=- none]
+[S1->S2 m dist=(0,0) anti]
+[S2->S2 m dist=- none]
+[deps] loop head=B13 latch=B19 stmts=2
+[S1->S1 m dist=- none]
+[S1->S2 m dist=(0,0) anti]
+[S2->S2 m dist=- none]
+[deps] loop head=B21 latch=B23 stmts=2
+[S1->S1 u dist=- none]
+[S1->S2 u dist=? unknown]
+[S2->S2 u dist=- none]

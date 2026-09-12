@@ -1,0 +1,19 @@
+main():
+  g = 7
+  n = 5
+  i = 0
+  acc = 0
+L1:
+  if i < n goto L2
+  goto L3
+L2:
+  t1 = g * n
+  t2 = acc + t1
+  acc = t2
+  t3 = i + 1
+  i = t3
+  goto L1
+L3:
+  print acc
+  print acc
+  return

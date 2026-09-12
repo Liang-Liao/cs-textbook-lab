@@ -1,0 +1,22 @@
+main():
+  g = 7
+  n = 5
+  acc = 0
+  i = 0
+  t1 = 35
+L1:
+  if i < 8 goto L2
+  goto L3
+L2:
+  t2 = acc + t1
+  acc = t2
+  t3 = i + 1
+  i = t3
+  t4 = acc + t1
+  acc = t4
+  t5 = i + 1
+  i = t5
+  goto L1
+L3:
+  print acc
+  return

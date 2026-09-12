@@ -1,0 +1,10 @@
+[space] == func main ==
+[space] nest i in [1,6) x j in [0,5)
+[space]      j=0   j=1   j=2   j=3   j=4   
+[space] i=1  .    A    .    .    .    
+[space] i=2  .    .    .    .    .    
+[space] i=3  .    .    .    .    .    
+[space] i=4  .    .    .    .    .    
+[space] i=5  .    .    .    .    .    
+[space] arrows:
+[space]   A: S2->S1 dist=(1,-1) true at (i=1,j=1)

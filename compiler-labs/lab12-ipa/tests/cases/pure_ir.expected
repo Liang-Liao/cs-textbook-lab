@@ -1,0 +1,42 @@
+main():
+  base = 7
+  param 5
+  t5 = call probe, 1
+  seed = t5
+  i = 0
+L1:
+  if i < 8 goto L2
+  goto L3
+L2:
+  param i
+  t6 = call probe, 1
+  t7 = seed * 2
+  t8 = t6 + t7
+  a[i] = t8
+  t9 = i + 1
+  i = t9
+  goto L1
+L3:
+  t10 = a[3]
+  print t10
+  param 99
+  t11 = call probe, 1
+  call poke, 0
+  print base
+  param 2
+  t12 = call probe, 1
+  print t12
+  return
+
+probe(x):
+  b[0] = x
+  t1 = b[0]
+  t2 = t1 + base
+  b[1] = t2
+  t3 = b[1]
+  return t3
+
+poke():
+  t4 = base + 1
+  base = t4
+  return

@@ -1,0 +1,18 @@
+(program
+  (decl int x (int 3))
+  (decl float y)
+  (assign x (binop + (var x) (int 1)))
+  (print (binop + (i2f (var x)) (float 0.5)))
+  (if (binop < (var x) (int 5))
+    (print (int 1))
+    (print (int 2))
+  )
+  (while (binop < (var x) (int 5))
+    (assign x (binop + (var x) (int 1)))
+  )
+  (block
+    (decl int x (int 0))
+    (print (var x))
+  )
+  (exprst (binop + (int 2) (int 2)))
+)

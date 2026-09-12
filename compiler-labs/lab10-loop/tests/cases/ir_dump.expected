@@ -1,0 +1,42 @@
+main():
+  main_x = 3
+  t2 = -5
+  main_x@1 = t2
+  param main_x@1
+  t3 = call abs, 1
+  print t3
+  param main_x
+  t4 = call abs, 1
+  print t4
+  i = 0
+  s = 0
+L3:
+  if i < 4 goto L4
+  goto L8
+L4:
+  if_false 1 goto L8
+  goto L5
+L5:
+  t5 = s + i
+  s = t5
+  t6 = i + 1
+  i = t6
+  if s > 3 goto L6
+  goto L7
+L6:
+  goto L8
+L7:
+  goto L3
+L8:
+  print s
+  print i
+  return
+
+abs(x):
+  if x < 0 goto L1
+  goto L2
+L1:
+  t1 = -x
+  return t1
+L2:
+  return x

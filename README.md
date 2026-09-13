@@ -15,7 +15,7 @@
 
 ## 快速开始
 
-三个子项目均以 **MSYS2 UCRT64**（gcc + GNU Make）为主要验证环境，Windows / Linux 通用。
+各子项目均以 **MSYS2 UCRT64**（gcc + GNU Make）为主要验证环境，Windows / Linux 通用。
 
 ```bash
 # 算法实验（CLRS）
@@ -30,6 +30,15 @@ mingw32-make test
 # 编译原理实验（龙书）
 cd compiler-labs/lab1-lexer
 bash tests/run_tests.sh
+
+# 图形学实验（FoCG，离线输出 PPM 图像，无需 GPU）
+cd computer-graphics-labs
+mingw32-make test                          # 24 个 lab 自检
+mingw32-make run LAB=lab03-ray-tracing     # 运行单个 lab 出图
+
+# 密码学实验（应用密码学）
+cd cryptography-labs
+mingw32-make test
 ```
 
 各子项目的详细说明、学习路线与实验清单见对应目录下的 `README.md`。
@@ -38,7 +47,7 @@ bash tests/run_tests.sh
 
 - gcc（C11），建议 MSYS2 UCRT64 工具链（Windows）或任意 GCC ≥ 11（Linux/macOS）
 - GNU Make（Windows 下可用 MSYS2 的 `mingw32-make`）
-- compiler-labs 的测试脚本需要 bash（MSYS2 / Git Bash / WSL 均可）
+- compiler-labs 与 cryptography-labs 的顶层测试脚本需要 bash/sh（MSYS2 / Git Bash / WSL 均可）
 
 ## License
 

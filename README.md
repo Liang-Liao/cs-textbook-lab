@@ -10,6 +10,8 @@
 | [algorithms-labs](algorithms-labs/) | 《算法导论》（CLRS 第 3 版） | 逐章算法实现与测试 | C11 / GNU Make | 32 个实验 |
 | [assembly-labs](assembly-labs/) | 汇编语言（王爽）+ CSAPP 等 | x86-64 汇编递进实验 | GAS 汇编 + C / GNU Make | 16 个实验 |
 | [compiler-labs](compiler-labs/) | 《编译原理》（龙书 第 2 版） | 逐 lab 构造 MiniC 编译器 | C11 / GNU Make + bash | 13 个实验 |
+| [computer-graphics-labs](computer-graphics-labs/) | 《计算机图形学基础》（FoCG 第 5 版） | 软件光线追踪与光栅化实验 | C11 / GNU Make | 24 个实验 |
+| [cryptography-labs](cryptography-labs/) | 《应用密码学》（Schneier 第 2 版） | 逐章密码算法与协议实现 | C11 / GNU Make | 20 个实验 |
 
 ## 快速开始
 

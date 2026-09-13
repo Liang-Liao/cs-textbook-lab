@@ -1,0 +1,17 @@
+# Build artifacts
+*.o
+*.obj
+*.a
+*.lib
+*.exe
+*.out
+build/
+cmake-build-*/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+.zcode/

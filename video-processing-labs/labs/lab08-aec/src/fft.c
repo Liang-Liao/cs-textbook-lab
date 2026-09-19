@@ -1,0 +1,26 @@
+/* copied from lab02-time-frequency (adapted for lab08-aec) */
+#include "fft.h"
+#include <math.h>
+#include <stdlib.h>
+void fft(cpx *data, int n) {
+    if (!data || n <= 1) return;
+    int half = n / 2;
+    cpx *e = malloc((size_t)half * sizeof(cpx));
+    cpx *o = malloc((size_t)half * sizeof(cpx));
+    if (!e || !o) { free(e); free(o); return; }
+    for (int i = 0; i < half; i++) { e[i]=data[2*i]; o[i]=data[2*i+1]; }
+    fft(e, half); fft(o, half);
+    for (int k = 0; k < half; k++) {
+        double a = -2.0 * M_PI * k / n;
+        double wr=cos(a), wi=sin(a);
+        double tr=wr*o[k].re - wi*o[k].im, ti=wr*o[k].im + wi*o[k].re;
+        data[k].re=e[k].re+tr; data[k].im=e[k].im+ti;
+        data[k+half].re=e[k].re-tr; data[k+half].im=e[k].im-ti;
+    }
+    free(e); free(o);
+}
+void ifft(cpx *d, int n) {
+    for (int i=0;i<n;i++) d[i].im=-d[i].im;
+    fft(d,n);
+    for (int i=0;i<n;i++){ d[i].re/=n; d[i].im=-d[i].im/n; }
+}

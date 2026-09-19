@@ -1,0 +1,20 @@
+# build artifacts
+*.o
+*.exe
+*.a
+*.d
+
+# lab outputs
+out/
+**/out/
+
+# editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# worktrees (if created later)
+.worktrees/
+.zcode/

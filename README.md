@@ -12,6 +12,7 @@
 | [compiler-labs](compiler-labs/) | 《编译原理》（龙书 第 2 版） | 逐 lab 构造 MiniC 编译器 | C11 / GNU Make + bash | 13 个实验 |
 | [computer-graphics-labs](computer-graphics-labs/) | 《计算机图形学基础》（FoCG 第 5 版） | 软件光线追踪与光栅化实验 | C11 / GNU Make | 24 个实验 |
 | [cryptography-labs](cryptography-labs/) | 《应用密码学》（Schneier 第 2 版） | 逐章密码算法与协议实现 | C11 / GNU Make | 20 个实验 |
+| [video-processing-labs](video-processing-labs/) | 《音视频开发理论知识路线图》（自研课程） | 音视频原理手写实现：采样/降噪/编解码/容器/传输 | C11 / GNU Make | 19 个实验 |
 
 ## 快速开始
 
@@ -39,6 +40,10 @@ mingw32-make run LAB=lab03-ray-tracing     # 运行单个 lab 出图
 # 密码学实验（应用密码学）
 cd cryptography-labs
 mingw32-make test
+
+# 音视频实验（手写实现采样/滤波/编解码/容器/传输，无第三方库）
+cd video-processing-labs/labs/lab01-sampling-quantization
+make test          # 单 lab 自检，lab01–lab19 同理（make run 可输出 WAV/PGM 产物）
 ```
 
 各子项目的详细说明、学习路线与实验清单见对应目录下的 `README.md`。

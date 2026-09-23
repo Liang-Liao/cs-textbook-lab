@@ -1,0 +1,2 @@
+amp,nm_err,gd_err,criterion
+0.05,0.146203,3.774917,nm<=3amp+0.1; gd劣化

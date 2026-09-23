@@ -1,0 +1,4 @@
+dist,n,reps,reject_rate
+uniform,200,1000,0.0530
+exponential,200,1000,0.0530
+normal,200,1000,0.0440

@@ -1,0 +1,5 @@
+method,VR_empirical,VR_theory
+control_variate,0.016754,0.016280
+antithetic,0.030809,0.032330
+common_random_numbers,0.003286,na
+stratified,0.010546,na

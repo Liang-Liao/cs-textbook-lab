@@ -1,0 +1,5 @@
+arm,hit_rate,mean_fbest,trials,evals_per_run
+single,0.5900,0.3313,200,4600
+reheat_300x0.3,0.0000,0.0501,200,4600
+log_schedule,0.0000,1.7803,200,4600
+multirestart8,1.0000,,200,4600

@@ -1,0 +1,5 @@
+matrix,method,omega,iters,converged,final_res_inf
+poisson20,jacobi,0.000000,2082,0,1.976641e-12
+poisson20,gauss_seidel,0.000000,1073,0,9.964252e-13
+poisson20,sor_omega1,1.000000,1073,0,9.964252e-13
+poisson20,sor_omega_opt,1.740580,105,0,3.144152e-13

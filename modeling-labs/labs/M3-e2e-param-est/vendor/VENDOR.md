@@ -1,0 +1,14 @@
+# vendor（前序 lab 业务算法 copy）
+
+本 lab **M3-e2e-param-est** 编译使用本目录；正本在下列前序 lab 的 `src/`。
+只读：不要在 vendor 写业务代码。更新依赖时重跑 sync_vendor。
+
+- 来自 `A1-numeric-la/src`: vec.h, vec.c, mat.h, mat.c, linalg.h, linalg.c
+- 来自 `A2-prob-stat/src`: dist.h, dist.c, stats.h, stats.c, gof.h, gof.c
+- 来自 `A3-convex-opt/src`: conv.h, conv.c
+- 来自 `C1-rng-mc/src`: rng.h, rng.c
+- 来自 `B1-line-search-gd/src`: opt.h, linesearch.h, linesearch.c
+- 来自 `B2-newton-quasi-tr/src`: optcore.h, optcore.c, bench.h, bench.c
+- 来自 `C2-mcmc/src`: mcmc.h, mcmc.c
+- 来自 `C5-ga-de/src`: de.h, de.c
+- 来自 `D2-ode-sim/src`: ode.h, ode.c

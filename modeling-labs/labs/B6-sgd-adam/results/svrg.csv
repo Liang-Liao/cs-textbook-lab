@@ -1,0 +1,3 @@
+method,evals,gap
+svrg,6000,5.551e-17
+sgd,6000,4.931e-04

@@ -1,0 +1,3 @@
+method,iters_to_f<1e-6
+momentum,133
+nesterov,50

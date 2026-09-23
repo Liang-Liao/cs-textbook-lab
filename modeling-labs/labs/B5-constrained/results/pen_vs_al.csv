@@ -1,0 +1,15 @@
+method,mu_or_sigma,err
+penalty,1e+00,3.333e-01
+penalty,1e+01,4.762e-02
+penalty,1e+02,4.975e-03
+penalty,1e+03,4.998e-04
+penalty,1e+04,5.000e-05
+penalty,1e+05,5.000e-06
+penalty,1e+06,5.000e-07
+auglag,1e+00,9.481e-14
+auglag,4e+00,1.625e-13
+auglag,2e+01,0.000e+00
+auglag,6e+01,0.000e+00
+auglag,3e+02,6.106e-14
+auglag,1e+03,1.110e-16
+auglag,4e+03,0.000e+00

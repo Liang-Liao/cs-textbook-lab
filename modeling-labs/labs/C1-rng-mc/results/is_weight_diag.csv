@@ -1,0 +1,3 @@
+proposal,n,ess_ratio,w_cv2,w_max_ratio,mean,se
+good_q_exp_half,20000,0.979443,0.020988,0.000065,1.719332,3.51e-03
+bad_q_narrow,20000,0.053372,17.736290,0.022890,1.000000,0.00e+00

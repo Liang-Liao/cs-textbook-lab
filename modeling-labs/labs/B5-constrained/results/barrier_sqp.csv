@@ -1,0 +1,3 @@
+method,x,kkt
+log_barrier,0.99999900,1.00e-06
+sqp,1.00000000,0.00e+00

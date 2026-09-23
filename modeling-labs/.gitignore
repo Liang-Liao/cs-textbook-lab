@@ -1,0 +1,17 @@
+# build artifacts
+build/
+*.o
+*.a
+*.d
+*.exe
+labs/*/bin/
+labs/*/*.exe
+common/bin/
+
+# editor / OS
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
+.zcode/

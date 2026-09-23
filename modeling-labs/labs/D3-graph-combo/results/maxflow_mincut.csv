@@ -1,0 +1,4 @@
+check,value
+clrs_maxflow,23.000000
+clrs_expected,23
+random_mincut_mismatches,0

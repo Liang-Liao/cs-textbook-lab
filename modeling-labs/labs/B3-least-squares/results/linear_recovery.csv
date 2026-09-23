@@ -1,0 +1,2 @@
+reps,max_abs_z,viol_3sigma_rate,criterion
+200,3.5352,0.007500,max|z|<=4; P(|z|>3)<=1%

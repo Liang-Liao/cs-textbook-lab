@@ -1,0 +1,4 @@
+method,h,y0,y1,y2,sum
+euler,0.05,-nan(ind),-nan(ind),-nan(ind),-nan(ind)
+euler_implicit,0.05,0.716001,9.19231e-06,0.283989,1
+rk4,0.05,-nan(ind),-nan(ind),-nan(ind),-nan(ind)
